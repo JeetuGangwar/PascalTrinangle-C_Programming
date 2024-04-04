@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int i,n;
+    scanf("%d",&n);
+      for(i=1;i<=n;i++)
+        {
+            int j;
+           for(j=1;j<=n-i;j++)
+             {
+                 printf("  ");
+                 int s=1;
+                 for( int p=1;p<=i;p++)
+                   {
+                        printf("%d ", s); 
+                        s=s*(i-p)/p; 
+                   }
+                  printf("\n"); 
+             }
+             
+        }
+        return 0;
+}
